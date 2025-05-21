@@ -18,6 +18,7 @@ Main menu
 11. Clock
 12. Profiles
 13. SIM services
+99. Exit
 		""")
 		try:
 			choice = int(input("Select an option: "))
@@ -32,7 +33,16 @@ Main menu
 		elif choice == 2:
 			messages_menu()
 		elif choice == 3:
-			chat_menu()
+			while True:
+				print("""
+				Chat
+				0. Back
+				""")
+				chat_choice = input("Select an option: ")
+				if chat_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif choice == 4:
 			call_register_menu()
 		elif choice == 5:
@@ -40,19 +50,73 @@ Main menu
 		elif choice == 6:
 			settings_menu()
 		elif choice == 7:
-			call_divert_menu()
-		elif choice == 8:
-			games_menu()
+			while True:
+				print("""
+				Call divert
+				0. Back
+				""")
+				call_divert_choice = input("Select an option: ")
+				if call_divert_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
+		elif choice == 8: 
+			while True:
+				print("""
+				Games
+				0. Back
+				""")
+				games_choice = input("Select an option: ")
+				if call_divert_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif choice == 9:
-			calculator()
+			while True:
+				print("""
+				Calculator
+				0. Back
+				""")
+				calculator_choice = input("Select an option: ")
+				if call_divert_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif choice == 10:
-			reminders_menu()
+			while True:
+				print("""
+				Reminders
+				0. Back
+				""")
+				reminders_choice = input("Select an option: ")
+				if call_divert_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif choice == 11:
 			clock_menu()
 		elif choice == 12:
-			profiles_menu()
+			while True:
+				print("""
+				Profiles
+				0. Back
+				""")
+				profiles_choice = input("Select an option: ")	
+				if profiles_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif choice == 13:
-			sim_services_menu()
+			while True:
+				print("""
+				SIM services
+				0. Back
+				""")
+				sim_services_choice = input("Select an option: ")
+				if sim_services_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		else:
 			print("Invalid option. try again.")	
 
@@ -78,140 +142,109 @@ Phone book
 		if phone_book_choice == 0:
 			break
 		elif phone_book_choice == 1:
-			search_menu()
+			while True:
+				print("""
+				Search
+				0. back to previous menu
+				""")
+				search_choice = input('Select option: ')
+				if search_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif phone_book_choice == 2:
-			service_nos_menu()
+			while True:
+				print("""
+				Service Nos
+				0. back to previous menu
+				""")
+				service_nos_choice = input('Select option: ')
+				if service_nos_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif phone_book_choice == 3:
-			add_name_menu()
+			while True:
+				print("""
+				Add name
+				0. back to previous menu
+				""")
+				add_name_choice = input('Select option: ')
+				if add_name_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif phone_book_choice == 4:
-			erase_menu()
+			while True:
+				print("""
+				Erase
+				0. back to previous menu
+				""")
+				erase_choice = input('Select option: ')
+				if erase_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif phone_book_choice == 5:
-			edit_menu()
+			while True:
+				print("""
+				Edit
+				0. back to previous menu
+				""")
+				edit_choice = input('Select option: ')
+				if edit_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif phone_book_choice == 6:
-			assign_tone()
+			while True:
+				print("""
+				Assign tone
+				0. back to previous menu
+				""")
+				assign_tone_choice = input('Select option: ')
+				if assign_tone_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif phone_book_choice == 7:
-			send_bcard_menu()
+			while True:
+				print("""
+				Send b'card
+				0. Back to previous menu
+				""")
+				send_bcard_choice = input('Select option: ')
+				if send_bcard_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif phone_book_choice == 8:
 			options_menu()
-		elif phone_book_choice == 9:
-			speed_dials_menu()
+		elif phone_book_choice == 9:		
+			while True:
+				print("""
+				Speed dials menu
+				0. Back to previous menu
+				""")
+				speed_dials_choice = input('Select option: ')
+				if speed_dials_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
+
 		elif phone_book_choice == 10:
-			voice_tags_menu()
+			while True:
+				print("""
+				Voice tags
+				0. Back 
+				""")
+				voice_tags_choice = input('Select option: ')
+				if voice_tags_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		else:
 			input("Invalid input. Try again.")
-
-def search_menu():
-	while True:
-		print("""
-		Search
-		0. back to previous menu
-		""")
-		search_choice = input('Select option: ')
-		if search_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-def service_nos_menu():
-	while True:
-		print("""
-		Service Nos
-		0. back to previous menu
-		""")
-		service_nos_choice = input('Select option: ')
-		if service_nos_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def add_name_menu():
-	while True:
-		print("""
-		Add name
-		0. back to previous menu
-		""")
-		add_name_choice = input('Select option: ')
-		if add_name_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def erase_menu():
-	while True:
-		print("""
-		Erase
-		0. back to previous menu
-		""")
-		erase_choice = input('Select option: ')
-		if erase_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def edit_menu():
-	while True:
-		print("""
-		Edit
-		0. back to previous menu
-		""")
-		edit_choice = input('Select option: ')
-		if edit_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def assign_tone_menu():
-	while True:
-		print("""
-		Assign tone
-		0. back to previous menu
-		""")
-		assign_tone_choice = input('Select option: ')
-		if assign_tone_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-
-def send_bcard_menu():
-	while True:
-		print("""
-		Send b'card
-		0. Back to previous menu
-		""")
-		send_bcard_choice = input('Select option: ')
-		if send_bcard_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-
-
-def speed_dials_menu():
-	while True:
-		print("""
-		Speed dials menu
-		0. Back to previous menu
-		""")
-		speed_dials_choice = input('Select option: ')
-		if speed_dials_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-
-def voice_tags_menu():
-	while True:
-		print("""
-		Voice tags
-		0. Back 
-		""")
-		voice_tags_choice = input('Select option: ')
-		if voice_tags_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-
 def options_menu():
 	while True:
 		print("""
@@ -225,36 +258,30 @@ def options_menu():
 		if options_choice == 0:
 			break
 		elif options_choice == 1:
-			type_of_view_menu()
+			while True:
+				print("""
+				Type of view
+				0. Back
+				""")
+				type_of_view_choice = input('Select option: ')
+				if type_of_view_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif options_choice == 2:
-			memory_status_menu()		
+			while True:
+				print("""
+				Memory status
+				0. Back
+				""")
+				memory_status_choice = input('Select option: ')
+				if memory_status_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")		
 		else:
 			input("Invalid input. Try again.")
-
-def type_of_view_menu():
-	while True:
-		print("""
-		Type of view
-		0. Back
-		""")
-		type_of_view_choice = input('Select option: ')
-		if type_of_view_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def memory_status_menu():
-	while True:
-		print("""
-		Memory status
-		0. Back
-		""")
-		memory_status_choice = input('Select option: ')
-		if memory_status_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
+	
 def messages_menu():
 	while True:
 		print("""
@@ -276,135 +303,109 @@ Messages
 		if messages_choice == "0":
 			break
 		elif messages_choice == "1":
-			write_message_menu()
+			while True:
+				print("""
+				Write message
+				0. Back
+				""")
+				write_message_choice = input('select option:')
+				if write_message_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif messages_choice == "2":
-			inbox_menu()
+			while True:
+				print("""
+				Inbox
+				0. Back
+				""")
+				inbox_choice = input('select option:')
+				if inbox_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif messages_choice == "3":
-			outbox_menu()
+			while True:
+				print("""
+				Outbox
+				0. Back
+				""")
+				outbox_choice = input('select option:')
+				if outbox_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif messages_choice == "4":
-			picture_messages_menu()
+			while True:
+				print("""
+				Picture messages
+				0. Back
+				""")
+				picture_messages_choice = input('select option:')
+				if picture_messages_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif messages_choice == "5":
-			templates_menu()
+			while True:
+				print("""
+				Templates
+				0. Back
+				""")
+				templates_choice = input('select option:')
+				if templates_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif messages_choice == "6":
-			smileys_menu()
+			while True:
+				print("""
+				Smileys
+				0. Back
+				""")
+				smileys_choice = input('select option:')
+				if smileys_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif messages_choice == "7":
 			message_settings_menu()
 		elif messages_choice == "8":
-			info_services_menu()
+			while True:
+				print("""
+				Info services
+				0. Back
+				""")
+				info_services_choice = input('select option:')
+				if info_services_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
+
 		elif messages_choice == "9":
-			voice_mailbox_number_menu()
+			while True:
+				print("""
+				Voice mailbox number
+				0. Back
+				""")
+				voice_mailbox_number_choice = input('select option:')
+				if voice_mailbox_number_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif messages_choice == "10":
-			service_command_editor_menu()
+			while True:
+				print("""
+				Service command editor
+				0. Back
+				""")
+				service_command_editor_choice = input('select option:')
+				if service_command_editor_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		else:
-			input("invalid input. try again")
-def write_message_menu():
-	while True:
-		print("""
-		Write message
-		0. Back
-		""")
-		write_message_choice = input('select option:')
-		if write_message_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def inbox_menu():
-	while True:
-		print("""
-		Inbox
-		0. Back
-		""")
-		inbox_choice = input('select option:')
-		if inbox_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def outbox_menu():
-	while True:
-		print("""
-		Outbox
-		0. Back
-		""")
-		outbox_choice = input('select option:')
-		if outbox_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def picture_messages_menu():
-	while True:
-		print("""
-		Picture messages
-		0. Back
-		""")
-		picture_messages_choice = input('select option:')
-		if picture_messages_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def templates_menu():
-	while True:
-		print("""
-		Templates
-		0. Back
-		""")
-		templates_choice = input('select option:')
-		if templates_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def smileys_menu():
-	while True:
-		print("""
-		Smileys
-		0. Back
-		""")
-		smileys_choice = input('select option:')
-		if smileys_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def info_services_menu():
-	while True:
-		print("""
-		Info services
-		0. Back
-		""")
-		info_services_choice = input('select option:')
-		if info_services_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-	
-def voice_mailbox_number_menu():
-	while True:
-		print("""
-		Voice mailbox number
-		0. Back
-		""")
-		voice_mailbox_number_choice = input('select option:')
-		if voice_mailbox_number_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def service_command_editor_menu():
-	while True:
-		print("""
-		Service command editor
-		0. Back
-		""")
-		service_command_editor_choice = input('select option:')
-		if service_command_editor_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
+			input("invalid input. try again")	
 
 def message_settings_menu():
 	while True:
@@ -423,7 +424,7 @@ Message settings
 		elif message_settings_choice == "0":
 			break
 		else:
-			print("Invalid input")
+			print("Invalid input. Try again.")
 
 def set1_menu():
 	while True:
@@ -439,50 +440,41 @@ def set1_menu():
 		if set1_choice == "0":
 			break
 		elif set1_choice == "1":
-			message_centre_number()
+			while True:
+				print("""
+				Message centre number
+				0. Back
+				""")
+				message_centre_choice = input("Select an option: ")
+				if message_centre_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif set1_choice == "2":
-			message_sent_as()
+			while True:
+				print("""
+				Message sent as
+				0. Back
+				""")
+				message_sent_choice = input("Select an option: ")
+				if message_sent_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif set1_choice == "3":
-			message_validity()
+			while True:
+				print("""
+				Message validity
+				0. Back
+				""")
+				message_validity_choice = input("Select an option: ")
+				if message_validity_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		else:
 			input("invalid input. try again.")
-
-def message_centre_number():
-	while True:
-		print("""
-		Message centre number
-		0. Back
-		""")
-		message_centre_choice = input("Select an option: ")
-		if message_centre_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def message_sent_as():
-	while True:
-		print("""
-		Message sent as
-		0. Back
-		""")
-		message_sent_choice = input("Select an option: ")
-		if message_sent_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-def message_validity():
-	while True:
-		print("""
-		Message validity
-		0. Back
-		""")
-		message_validity_choice = input("Select an option: ")
-		if message_validity_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-
+	
 def common_menu():
 	while True:
 		print("""
@@ -497,35 +489,40 @@ def common_menu():
 		if common_choice == "0":
 			break
 		elif common_choice == "1":
-			print("""
+			while True:
+				print("""
 				Delivery reports
 				0. Back
-			""")
-			common_choice = input("Select an option: ")
+				""")
+				delivery_choice = input("Select an option: ")
+				if delivery_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif common_choice == "2":
-			print("""
+			while True:
+				print("""
 				Reply via same centre
 				0. Back
-			""")
-			common_choice = input("Select an option: ")
+				""")
+				reply_choice = input("Select an option: ")
+				if reply_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif common_choice == "3":
-			print("""
+			while True:
+				print("""
 				Character support
 				0. Back
-			""")
-			common_choice = input("Select an option: ")
+				""")
+				character_choice = input("Select an option: ")
+				if character_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		else:
 			input("invalid input. try again.")
-def chat_menu():
-	while True:
-		print("""
-		Chat
-
-		0. Back
-		""")
-		chat_choice = input("Select an option: ")
-		if chat_choice == "0":
-			break
 
 def call_register_menu():
 	while True:
@@ -546,13 +543,50 @@ def call_register_menu():
 		if call_register_choice == "0":
 			break
 		elif call_register_choice == "1":
-			missed_calls_menu()
+			while True:
+				print("""
+				Missed calls
+				0. back
+				""")
+				missed_calls_choice = input("Select an option: ")
+				if missed_calls_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif call_register_choice == "2":
-			received_calls_menu()
+			while True:
+				print("""
+				Received calls
+				0. Back
+				""")
+				recieved_calls_choice = input("Select an option: ")
+				if recieved_calls_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif call_register_choice == "3":
-			dialled_numbers_menu()
+			while True:
+				print("""
+				Dialled numbers
+				0. Back
+				""")
+				dialled_numbers_choice = input("Select an option: ")
+				if dialled_numbers_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		elif call_register_choice == "4":
-			erase_recent_call_lists_menu()
+			while True:
+				print("""
+				Erased recent call lists
+				0. Back
+				""")
+				erase_recent_call_lists_choice = input("Select an option: ")
+				if erase_recent_call_lists_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
+
 		elif call_register_choice == "5":
 			show_call_duration_menu()
 		elif call_register_choice == "6":
@@ -560,36 +594,19 @@ def call_register_menu():
 		elif call_register_choice == "7":
 			call_cost_settings_menu()
 		elif call_register_choice == "8":
-			prepaid_credit_menu()
+			while True:
+				print("""
+				Prepaid credit
+				0. Back
+				""")
+				prepaid_credit_choice = input("Select an option: ")
+				if prepaid_credit_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
 		else:
 			input("invalid input. try again.")
-
-def missed_calls_menu():
-	print("""
-		Missed calls
-		0. back
-	""")
-	missed_calls_choice = input("Select an option: ")
-	if missed_calls_choice < "0" or missed_calls_choice > "0":
-		print('Invalid number.')
-def received_calls_menu():
-	print("""
-		Received calls
-		0. Back
-	""")
-	recieved_calls_choice = input("Select an option: ")
-def dialled_numbers_menu():
-	print("""
-		Dialled numbers
-		0. Back
-	""")
-	dialled_numbers_choice = input("Select an option: ")
-def erase_recent_call_lists_menu():
-	print("""
-		Erased recent call lists
-		0. Back
-	""")
-	erase_recent_call_lists_choice = input("Select an option: ")
+	
 def show_call_duration_menu():
 	while True:
 		print("""
@@ -603,39 +620,66 @@ def show_call_duration_menu():
 
 		""")
 		show_call_duration_choice = input("Select an option: ")
-
 		if show_call_duration_choice == "0":
 			break
-		if show_call_duration_choice == "1":
-			print("""
+		elif show_call_duration_choice == "1":
+			while True:
+				print("""
 				Last call duration
 				0. Back
-			""")
-			last_call_duration_choice = input("Select an option: ")
-		if show_call_duration_choice == "2":
-			print("""
+				""")
+				last_call_duration_choice = input("Select an option: ")
+				if last_call_duration_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
+		elif show_call_duration_choice == "2":
+			while True:
+				print("""
 				All calls' duration
 				0. Back
-			""")
-			all_calls_duration_choice = input("Select an option: ")
-		if show_call_duration_choice == "3":
-			print("""
+				""")
+				all_calls_duration_choice = input("Select an option: ")
+				if all_calls_duration_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
+		elif show_call_duration_choice == "3":
+			while True:
+				print("""
 				Receieved calls' duration
 				0. Back
-			""")
-			receieved_calls_duration_choice = input("Select an option: ")
-		if show_call_duration_choice == "4":
-			print("""
+				""")
+				receieved_calls_duration_choice = input("Select an option: ")
+				if receieved_calls_duration_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again."))
+		elif show_call_duration_choice == "4":
+			while True:
+				print("""
 				Dialled calls' duration
 				0. Back
-			""")
-			dialled_calls_duration_choice = input("Select an option: ")
-		if Show_call_duration_choice == "5":
-			print("""
+				""")
+				dialled_calls_duration_choice = input("Select an option: ")
+				if dialled_calls_duration_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
+		elif show_call_duration_choice == "5":
+			while True:
+				print("""
 				Clear timers
 				0. Back
-			""")
-			clear_timers_choice = input("Select an option: ")
+				""")
+				clear_timers_choice = input("Select an option: ")
+				if clear_timers_choice == "0":
+					break
+				else:
+					print("Invalid option. Try again.")
+		else:
+			print("Invalid option. Try again.")
+	
 def show_call_costs_menu():
 	while True:
 		print("""
@@ -648,24 +692,48 @@ def show_call_costs_menu():
 		show_call_costs_choice = input("Select an option: ")
 		if show_call_costs_choice == "0":
 			break
-		if show_call_costs_choice == "1":
-			print("""
-				Last call cost
-				0. Back
-			""")		
-			last_call_cost_choice = input("Select an option: ")
-		if show_call_costs_choice == "2":
-			print("""
-				All calls' cost
-				0. Back
-			""")		
-			all_calls_cost_choice = input("Select an option: ")
-		if show_call_costs_choice == "3":
-			print("""
-				Clear counters
-				0. Back
-			""")		
-			clear_counters_choice = input("Select an option: ")
+		elif show_call_costs_choice == "1":
+			last_call_costs()
+		elif show_call_costs_choice == "2":
+			all_calls_cost()
+		elif show_call_costs_choice == "3":
+			clear_counters()
+		else:
+			print("Invalid option. Try again.")
+def last_call_costs():
+	while True:
+		print("""
+		Last call cost
+		0. Back
+		""")		
+		last_call_cost_choice = input("Select an option: ")
+		if clear_timers_choice == "0":
+			break
+		else:
+			print("Invalid option. Try again.")
+def all_calls_cost():
+	while True:
+		print("""
+		All calls' cost
+		0. Back
+		""")		
+		all_calls_cost_choice = input("Select an option: ")
+		if clear_timers_choice == "0":
+			break
+		else:
+			print("Invalid option. Try again.")
+def clear_counters():
+	while True:
+		print("""
+		Clear counters
+		0. Back
+		""")		
+		clear_counters_choice = input("Select an option: ")
+		if clear_timers_choice == "0":
+			break
+		else:
+			print("Invalid option. Try again.")
+
 def call_cost_settings_menu():
 	while True:
 		print("""
@@ -678,25 +746,33 @@ def call_cost_settings_menu():
 		if call_cost_settings_choice == "0":
 			break		
 		elif call_cost_settings_choice == "1":
-			print("""
-				Call cost limit
-				0. Back
-			""")
-			call_cost_limit_choice = input("Select an option: ")
+			call_cost_limit()
 		elif call_cost_settings_choice == "2":
-			print("""
-				Show costs in
-				0. Back
-			""")
-			show_costs_in_choice = input("Select an option: ")
-
-
-def prepaid_credit_menu():
-	print("""
-		Prepaid credit
+			show_costs_in()
+		else:
+			print("Invalid option. Try again.")
+def call_cost_limit():
+	while True:
+		print("""
+		Call cost limit
 		0. Back
-	""")
-	prepaid_credit_choice = input("Select an option: ")
+		""")
+		call_cost_limit_choice = input("Select an option: ")
+		if call_cost_limit_choice == "0":
+			break
+		else:
+			print("Invalid option. Try again.")
+def show_costs_in():
+	while True:
+		print("""
+		Show costs in
+		0. Back
+		""")
+		show_costs_in_choice = input("Select an option: ")
+		if show_costs_in_choice == "0":
+			break
+		else:
+			print("Invalid option. Try again.")
 
 def tones_menu():
 	while True:
@@ -718,61 +794,124 @@ def tones_menu():
 		if tones_choice == "0":
 			break
 		elif tones_choice == "1":
-			print("""
-				Ringing tone
-				0. Back
-			""")
-			ringing_tone_choice = input("Select an option: ")
+			ringing_tone()
 		elif tones_choice == "2":
-			print("""
-				Ringing volume
-				0. Back
-			""")
-			ringing_volume_choice = input("Select an option: ")
+			ringing_volume()
 		elif tones_choice == "3":
-			print("""
-				Incoming call alert
-				0. Back
-			""")
-			incoming_call_choice = input("Select an option: ")
+			incoming_call()
 		elif tones_choice == "4":
-			print("""
-				Composer
-				0. Back
-			""")
-			composer_choice = input("Select an option: ")
+			composer()
 		elif tones_choice == "5":
-			print("""
-				Message alert tones
-				0. Back
-			""")
-			message_alert_choice = input("Select an option: ")
+			message_alert()
 		elif tones_choice == "6":
-			print("""
-				Keypad tones
-				0. Back
-			""")
-			keypard_tones_choice = input("Select an option: ")
+			keypad_tones()
 		elif tones_choice == "7":
-			print("""
-				Warning and game tones
-				0. Back
-			""")
-			warning_game_choice = input("Select an option: ")
+			warning_games()
 		elif tones_choice == "8":
-			print("""
-				Vibrating alert
-				0. Back
-			""")
-			vibrating_alert_choice = input("Select an option: ")
+			vibrating_alert()
 		elif tones_choice == "9":
-			print("""
-				Screen saver
-				0. Back
-			""")
-			screen_saver_choice = input("Select an option: ")
+			screen_saver()
 		else:
-			input("invalid input. try again.")
+			print("Invalid option. Try again")
+def ringing_tone():
+	while True:
+		print("""
+		Ringing tone
+		0. Back
+		""")
+		ringing_tone_choice = input("Select an option: ")
+		if ringing_tone_choice == "0":
+			break
+		else:
+			print("Invalid option. Try again.")
+def ringing_volume():
+	while True:
+		print("""
+		Ringing volume
+		0. Back
+		""")
+		ringing_volume_choice = input("Select an option: ")
+		if ringing_volume_choice == "0":
+			break
+		else:
+			print("Invalid option. Try again.")
+def incoming_call():
+	while True:
+		print("""
+		Incoming call alert
+		0. Back
+		""")
+		incoming_call_choice = input("Select an option: ")
+		if incoming_call_choice == "0":
+			break
+		else:
+			print("Invalid option. Try again.")
+def composer():
+	while True:
+		print("""
+		Composer
+		0. Back
+		""")
+		composer_choice = input("Select an option: ")
+		if composer_choice == "0":
+			break
+		else:
+			print("Invalid option. Try again.")
+def message_alert():
+	while True:
+		print("""
+		Message alert tones
+		0. Back
+		""")
+		message_alert_choice = input("Select an option: ")
+		if message_alert_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def keypad_tones():
+	while True:
+		print("""
+		Keypad tones
+		0. Back
+		""")
+		keypard_tones_choice = input("Select an option: ")
+		if keypard_tones_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def warning_games():
+	while True:
+		print("""
+		Warning and game tones
+		0. Back
+		""")
+		warning_game_choice = input("Select an option: ")
+		if warning_game_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def vibrating_alert():
+	while True:
+		print("""
+		Vibrating alert
+		0. Back
+		""")
+		vibrating_alert_choice = input("Select an option: ")
+		if vibrating_alert_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def screen_saver():
+	while True:
+		print("""
+		Screen saver
+		0. Back
+		""")
+		screen_saver_choice = input("Select an option: ")
+		if screen_saver_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
 
 def settings_menu():
 	while True:
@@ -795,13 +934,9 @@ def settings_menu():
 		elif settings_choice == "3":
 			security_settings_menu()
 		elif settings_choice == "4":
-			print("""
-				Restore factory settings
-				0. Back
-			""")
-			restore_factory_choice = input("Select an option: ")
+			restore_factory()
 		else:
-			input("invalid input. try again.")
+			print("invalid input. try again.")
 
 def call_settings_menu():
 	while True:
@@ -820,41 +955,85 @@ def call_settings_menu():
 		if call_settings_choice == "0":
 			break
 		elif call_settings_choice == "1":
-			print("""
-				Automatic dialling
-				0.Back
-			""")
-			automatic_dialling_choice = input("Select an option: ")
+			automatic_dialling()
 		elif call_settings_choice == "2":
-			print("""
-				Speed dialling
-				0.Back
-			""")
-			speed_dialling_choice = input("Select an option: ")
+			speed_dialling()
 		elif call_settings_choice == "3":
-			print("""
-				Call waiting options
-				0.Back
-			""")
-			call_waiting_options_choice = input("Select an option: ")
+			call_waiting_options()
 		elif call_settings_choice == "4":
-			print("""
-				Own number sending
-				0.Back
-			""")
-			own_number_sending_choice = input("Select an option: ")
+			own_number_sending()
 		elif call_settings_choice == "5":
-			print("""
-				Phone line in use
-				0.Back
-			""")
-			phone_line_in_use_choice = input("Select an option: ")
+			phone_line_in_use()
 		elif call_settings_choice == "6":
-			print("""
-				Automatic answer
-				0.Back
-			""")
-			automatic_answer_choice = input("Select an option: ")
+			automatic_answer()
+		else:
+			print("Invalid option. Try again.")
+def automatic_dialling():
+	while True:
+		print("""
+		Automatic dialling
+		0.Back
+		""")
+		automatic_dialling_choice = input("Select an option: ")
+		if automatic_dialling_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def speed_dialling():
+	while True:
+		print("""
+		Speed dialling
+		0.Back
+		""")
+		speed_dialling_choice = input("Select an option: ")
+		if speed_dialling_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def call_waiting_options():
+	while True:
+		print("""
+		Call waiting options
+		0.Back
+		""")
+		call_waiting_options_choice = input("Select an option: ")
+		if call_waiting_options_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def own_number_sending():
+	while True:
+		print("""
+		Own number sending
+		0.Back
+		""")
+		own_number_sending_choice = input("Select an option: ")
+		if own_number_sending_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def phone_line_in_use():
+	while True:
+		print("""
+		Phone line in use
+		0.Back
+		""")
+		phone_line_in_use_choice = input("Select an option: ")
+		if phone_line_in_use_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def automatic_answer():
+	while True:
+		print("""
+		Automatic answer
+		0.Back
+		""")
+		automatic_answer_choice = input("Select an option: ")
+		if automatic_answer_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
 
 def phone_settings_menu():
 	while True:
@@ -872,41 +1051,83 @@ def phone_settings_menu():
 		if phone_settings_choice == "0":
 			break
 		elif phone_settings_choice == "1":
-			print("""
-				Language
-				0. Back
-			""")
-			language_choice = input("Select an option: ")
+			language()
 		elif phone_settings_choice == "2":
-			print("""
-				Cell info display
-				0. Back
-			""")
-			cell_info_display_choice = input("Select an option: ")
+			cell_info_display()
 		elif phone_settings_choice == "3":
-			print("""
-				Welcome note
-				0. Back
-			""")
-			cell_info_display_choice = input("Select an option: ")
+			welcome_note()
 		elif phone_settings_choice == "4":
-			print("""
-				Network selection
-				0. Back
-			""")
-			cell_info_display_choice = input("Select an option: ")
+			network_selection()
 		elif phone_settings_choice == "5":
-			print("""
-				Lights
-				0. Back
-			""")
-			Lights_choice = input("Select an option: ")
+			lights()
 		elif phone_settings_choice == "6":
-			print("""
-				Confirm SIM service actions
-				0. Back
-			""")
-			confirm_sim_service_actions_choice = input("Select an option: ")
+			confirm_sim()
+		else:
+			print("Invalid option. Try again.")
+def language():
+	while True:
+		print("""
+		Language
+		0. Back
+		""")
+		language_choice = input("Select an option: ")
+		if language_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def cell_info_display():
+	while True:
+		print("""
+		Cell info display
+		0. Back
+		""")
+		cell_info_display_choice = input("Select an option: ")
+		if cell_info_display_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def welcome_note():
+	while True:
+		print("""
+		Welcome note
+		0. Back
+		""")
+		welcome_note_choice = input("Select an option: ")
+		if welcome_note_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def network_selection():
+	while True:
+		print("""
+		Network selection
+		0. Back
+		""")
+		network_selection_choice = input("Select an option: ")
+		if network_selection_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def lights():
+	while True:
+		print("""
+		Lights
+		0. Back
+		""")
+		lights_choice = input("Select an option: ")
+		if lights_choice == "0":
+			break
+		else:
+			print("invalid input. try again.")
+def confirm_sim():
+	while True:
+		print("""
+		Confirm SIM service actions
+		0. Back
+		""")
+		confirm_sim_service_actions_choice = input("Select an option: ")
+		if confirm_sim_service_actions_choice == "0":
+			break
 		else:
 			print('Invalid option. Try again.')
 
@@ -926,71 +1147,91 @@ def security_settings_menu():
 		if security_settings_choice == "0":
 			break
 		elif security_settings_choice == "1":
-			print("""
+			while True:
+				print("""
 				PIN code request
 				0. Back
-			""")
-			pin_code_choice = input("Select an option: ")
+				""")
+				pin_code_choice = input("Select an option: ")
+				if pin_code_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif security_settings_choice == "2":
-			print("""
+			while True:
+				print("""
 				Call barring service
 				0. Back
-			""")
-			call_barring_choice = input("Select an option: ")
+				""")
+				call_barring_choice = input("Select an option: ")
+				if call_barring_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif security_settings_choice == "3":
-			print("""
+			while True:
+				print("""
 				Fixed dialling
 				0. Back
-			""")
-			fixed_dialling_choice = input("Select an option: ")
+				""")
+				fixed_dialling_choice = input("Select an option: ")
+				if call_barring_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif security_settings_choice == "4":
-			print("""
+			while True:
+				print("""
 				Closed user group
 				0. Back
-			""")
-			closed_user_choice = input("Select an option: ")
+				""")
+				closed_user_choice = input("Select an option: ")
+				if call_barring_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif security_settings_choice == "5":
-			print("""
+			while True:
+				print("""
 				Phone security
 				0. Back
-			""")
-			phone_security_choice = input("Select an option: ")
+				""")
+				phone_security_choice = input("Select an option: ")
+				if call_barring_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif security_settings_choice == "6":
-			print("""
+			while True:
+				print("""
 				Change access settings
 				0. Back
-			""")
-			change_access_choice = input("Select an option: ")
+				""")
+				change_access_choice = input("Select an option: ")
+				if call_barring_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+		else:
+			print("Invalid option. Try again.")
+def restore_factory():
+	while True:	
+		print("""
+		Restore factory settings
+		0. Back
+		""")
+		restore_factory_choice = input("Select an option: ")
+		if restore_factory_choice == "0":
+			break
 		else:
 			print("Invalid option. Try again.")
 
-def call_divert_menu():
-	print("""
-		Call divert
-		0. Back
-	""")
-	call_divert_choice = input("Select an option: ")
 
-def games_menu():
-	print("""
-		Games
-		0. Back
-	""")
-	games_choice = input("Select an option: ")
-
-def calculator():
-	print("""
-		Calculator
-		0. Back
-	""")
-	calculator_choice = input("Select an option: ")
-
-def reminders_menu():
-	print("""
-		Reminders
-		0. Back
-	""")
-	reminders_choice = input("Select an option: ")
 def clock_menu():
 	while True:
 		print("""
@@ -1007,67 +1248,80 @@ def clock_menu():
 		if clock_choice == "0":
 			break
 		elif clock_choice == "1":
-			print("""
+			while True:
+				print("""
 				Alarm clock
 				0. Back
-			""")
-			alarm_clock_choice = input("Select an option: ")
+				""")
+				alarm_clock_choice = input("Select an option: ")
+				if alarm_clock_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif clock_choice == "2":
-			print("""
+			while True:
+				print("""
 				Clock settings
 				0. Back
-			""")
-			clock_settings_choice = input("Select an option: ")
+				""")
+				clock_settings_choice = input("Select an option: ")
+				if clock_settings_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif clock_choice == "3":
-			print("""
+			while True:
+				print("""
 				Date setting
 				0. Back
-			""")
-			date_setting_choice = input("Select an option: ")
+				""")
+				date_setting_choice = input("Select an option: ")
+				if date_setting_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif clock_choice == "4":
-			print("""
+			while true:
+				print("""
 				Stopwatch
 				0. Back
-			""")
-			stopwatch_choice = input("Select an option: ")
+				""")
+				stopwatch_choice = input("Select an option: ")
+				if stopwatch_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif clock_choice == "5":
-			print("""
+			while True:
+				print("""
 				Countdown timer
 				0. Back
-			""")
-			countdown_choice = input("Select an option: ")
+				""")
+				countdown_choice = input("Select an option: ")
+				if countdown_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		elif clock_choice == "6":
-			print("""
+			while True:
+				print("""
 				Auto update of date and time
 				0. Back
-			""")
-			auto_update_choice = input("Select an option: ")
+				""")
+				auto_update_choice = input("Select an option: ")
+				if auto_update_choice == "0":
+					break
+				else:
+					print('Invalid option. Try again.')
+
 		else:
 			print("Invalid option. Try again.")
 
-def profiles_menu():
-	while True:
-		print("""
-		Profiles
-		0. Back
-		""")
-		profiles_choice = input("Select an option: ")	
-		if profiles_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
-
-def sim_services_menu():
-	while True:
-		print("""
-		SIM services
-		0. Back
-		""")
-		sim_services_choice = input("Select an option: ")
-		if sim_services_choice == "0":
-			break
-		else:
-			print("Invalid option. Try again.")
 
 if __name__ == "__main__":
     main_menu()
